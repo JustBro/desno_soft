@@ -1,7 +1,8 @@
 ## Getting Started
-
-[Видео с демонстрацией работы](https://www.youtube.com/watch?v=nCM8vBwiCxw&ab_channel=ВладиславОботуров4)
-
+<br/>
+[Видео с демонстрацией работы](https://disk.yandex.ru/i/lx2ntfXgMMVj2g)
+<br/>
+<br/>
 ```bash
 npm i
 npm run build
