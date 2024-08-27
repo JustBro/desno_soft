@@ -1,0 +1,39 @@
+@import "@/styles/variables.scss";
+
+.auth {
+  display: flex;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  background-color: $bg-overlay;
+
+  @media (max-width: $media-m) {
+    padding: 16px;
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: $theme-white;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      svg {
+        fill: $icon-primary;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,25 @@
+@import '@/styles/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  color: $typography-primary;
+  font-family: 'Roboto', sans-serif;
+  line-height: 120%;
+}
+
+body {
+  background-color: $bg-overlay;
+}
+
+button {
+  font-weight: 600 !important;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}

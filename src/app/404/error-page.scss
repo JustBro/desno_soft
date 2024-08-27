@@ -1,0 +1,49 @@
+@import '@/styles/variables.scss';
+
+.error-page {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100dvh;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100dvh;
+        background-color: $bg-overlay;
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        max-width: 700px;
+        margin: auto;
+        font-size: 40px;
+        font-weight: 600;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 2;
+        bottom: 24px;
+        left: calc(50% - 16px);
+        transform: translateX(-50%);
+        // color: $theme-secondary;
+    }
+
+    &__bg {
+        position: absolute;
+        width: 100vw;
+        height: 100dvh;
+        object-fit: cover;
+    }
+}

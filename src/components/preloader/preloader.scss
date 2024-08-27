@@ -1,0 +1,38 @@
+@import '@/styles/variables.scss';
+
+.preloader {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100dvh;
+  background-color: $bg-overlay;
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 232px;
+    border-radius: 16px;
+  }
+
+  &__wrapper {
+    padding-top: 112.27%;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  &__dots {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+  }
+}

@@ -1,0 +1,78 @@
+@import "@/styles/variables.scss";
+
+.table {
+  overflow: auto;
+  max-height: calc(100dvh - 184px);
+  border-radius: 16px;
+  background-color: $theme-white;
+  box-shadow: 0 0 30px $theme-shadow;
+
+  * {
+    color: inherit;
+  }
+
+  &__theme {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $func-error;
+    color: $typography-invert;
+    font-size: 14px;
+  }
+
+  table {
+    width: 100%;
+    min-width: 1070px;
+    border-collapse: collapse;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: $theme-white;
+  }
+
+  tbody {
+    tr {
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: inset 0 0 10px $theme-shadow;
+      }
+    }
+  }
+
+  td,
+  th {
+    width: 100%;
+    padding: 16px;
+    border-bottom: 2px solid $theme-border;
+    text-align: left;
+
+    &:not(:first-child) {
+      text-wrap: nowrap;
+    }
+    &:last-child {
+      text-wrap: wrap;
+    }
+  }
+
+  th {
+    color: $typography-secondary;
+  }
+
+  td {
+    font-weight: 600;
+    color: $typography-accent;
+  }
+}
